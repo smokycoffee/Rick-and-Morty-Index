@@ -13,20 +13,22 @@ struct RMCharacterInfo: Codable, Hashable {
     let status: String
     let species: String
     let gender: String
-    let origin: Origins
+    var origin: Origins
     
     struct Origins: Codable, Hashable {
         let name: String
-        let url: String?
+        var url: String
     }
-    let location: Location
+    var location: Location
     
     struct Location: Codable, Hashable {
         let name: String
-        let url: String
+        var url: String
     }
     
     
     let image: String
     let created: String
 }
+ 
+

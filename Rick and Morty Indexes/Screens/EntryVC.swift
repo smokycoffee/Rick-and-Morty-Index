@@ -10,7 +10,7 @@ import UIKit
 class EntryVC: UIViewController {
     
     let placeholderImage = RMAvatarImageView(frame: .zero)
-    let getIndexButton = RMButton(backgroundColour: .systemGreen, title: "Show Characters")
+    let getIndexButton = RMButton(backgroundColour: .systemGreen, title: "Show all Characters")
     let posingRickAndMorty = RMAvatarImageView(frame: .zero)
 
     override func viewDidLoad() {

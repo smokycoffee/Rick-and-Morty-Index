@@ -26,7 +26,7 @@ class RMTitleLabel: UILabel {
     }
     
     private func configure() {
-        textColor = UIColor.label
+        textColor = UIColor.white
         adjustsFontSizeToFitWidth = true
         minimumScaleFactor = 0.90
         lineBreakMode = .byTruncatingTail

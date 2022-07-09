@@ -18,16 +18,16 @@ class RMSecondaryTitleLabel: UILabel {
         fatalError("init(coder:) has not been implemented")
     }
     
-    init(fontSize: CGFloat) {
+    init(fontSize: CGFloat, textAlignment: NSTextAlignment) {
         super.init(frame: .zero)
         font = UIFont.systemFont(ofSize: fontSize, weight: .medium)
+        self.textAlignment = textAlignment
         configure()
     }
     
     
     private func configure() {
-        
-        textColor = .secondaryLabel
+        textColor = .white
         adjustsFontSizeToFitWidth = true
         minimumScaleFactor = 0.90
         lineBreakMode = .byTruncatingTail
