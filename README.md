@@ -10,17 +10,21 @@ Assets and data retrieved from freepng and  [Rick and Morty Api](https://rickand
 
 <table>
   <tr>
-    <td>First Screen Page</td>
-     <td>Holiday Mention</td>
-     <td>Present day in purple and selected day in pink</td>
+    <td>Entry Page</td>
+     <td>Characters Collection View</td>
+     <td>Search function view</td>
   </tr>
   <tr>
-    <td><img src="screenshots/Screenshot_1582745092.png" width=270 height=480></td>
-    <td><img src="screenshots/Screenshot_1582745125.png" width=270 height=480></td>
-    <td><img src="screenshots/Screenshot_1582745139.png" width=270 height=480></td>
+    <td><img src="https://github.com/Tsenguun132/Rick-and-Morty-Index/blob/main/Simulator%20Screen%20Shot%20-%20iPhone%2013%20Pro%20Max%20-%202022-07-23%20at%2021.52.44.png" width=300 height=550></td>
+    <td><img src="https://github.com/Tsenguun132/Rick-and-Morty-Index/blob/main/Simulator%20Screen%20Shot%20-%20iPhone%2013%20Pro%20Max%20-%202022-07-23%20at%2021.52.46.png" width=300 height=550></td>
+    <td><img src="https://github.com/Tsenguun132/Rick-and-Morty-Index/blob/main/Simulator%20Screen%20Shot%20-%20iPhone%2013%20Pro%20Max%20-%202022-07-23%20at%2021.52.50.png" width=300 height=550></td>
   </tr>
  </table>
+ 
+ 
+Detail View and compositional Layout
 
+https://user-images.githubusercontent.com/20180605/180621089-9019556b-6e78-46bd-8c17-45fcb4eafb26.mp4
 
 ## How to run
 
