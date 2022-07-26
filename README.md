@@ -1,4 +1,4 @@
-# nft_App
+# Rick and Morty Indexes
 
 Rick and Morty Indexes is an app that populates all things rick and Morty. I decided to build this app to show case my knowledge in Programmatic UI 
 using UIKit, Swift, Networking, working with data, Persistence. 
@@ -34,6 +34,7 @@ Clone project, build in xcode and run via simulator.
 
 [Swift](https://developer.apple.com/swift/)\
 [UIKit](https://developer.apple.com/documentation/uikit)
+
 URLSession
 UserDefaults
 
