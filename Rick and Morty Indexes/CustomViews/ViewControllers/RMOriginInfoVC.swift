@@ -14,7 +14,7 @@ enum OriginSection {
 class RMOriginInfoVC: UIViewController {
     
     
-    var charInfo:    RMCharacterInfo!
+    var charInfo: RMCharacterInfo!
     
     var collectionView: UICollectionView!
     var dataSource: UICollectionViewDiffableDataSource<OriginSection, RMCharLocationCharInfo>!
@@ -59,7 +59,7 @@ class RMOriginInfoVC: UIViewController {
                 DispatchQueue.main.async {
                     self.add(childVC: RMCharLocationInfoHeaderVC(locationInfo: locationInfo, nameLabels: "Last Seen: \(locationInfo.name)"), to: self.locationInfoView)
                 }
-                print(locationInfo.residents)
+//                print(locationInfo.residents)
                 for item in locationInfo.residents {
                     NetworkManager.shared.getOriginAndCurrentLocation(for: item) { result in
                         switch result {
@@ -76,7 +76,6 @@ class RMOriginInfoVC: UIViewController {
             case .failure(let error):
                 print((error.rawValue))
             }
-
         }
     }
     
@@ -85,13 +84,16 @@ class RMOriginInfoVC: UIViewController {
             guard let self = self else {return}
             
             switch result {
-                
+
             case .success(let originInfo):
                 DispatchQueue.main.async {
                     self.add(childVC: RMCharLocationInfoHeaderVC(locationInfo: originInfo, nameLabels: "Origin: \(originInfo.name)"), to: self.originInfoView)
                 }
             case .failure(let error):
                 print(error.rawValue)
+                DispatchQueue.main.async {
+                    self.originInfoView.backgroundColor = UIColor(red: 34/255, green: 42/255, blue: 104/255, alpha: 1)
+                }
             }
         }
     }
@@ -123,7 +125,6 @@ class RMOriginInfoVC: UIViewController {
             collectionViewContentView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             collectionViewContentView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             collectionViewContentView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
-            
             
             originInfoView.topAnchor.constraint(equalTo: collectionViewContentView.bottomAnchor),
             originInfoView.leadingAnchor.constraint(equalTo: view.leadingAnchor),

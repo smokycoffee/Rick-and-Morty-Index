@@ -7,6 +7,8 @@
 
 import UIKit
 
+
+
 class CharInfoVC: UIViewController {
     
     let scrollView = UIScrollView()
