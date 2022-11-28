@@ -41,5 +41,5 @@ UserDefaults
 
 #### Status
 
-I will publish the app on the app store upon completing it. 
+To add persistence for favourite characters
 
